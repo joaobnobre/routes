@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    font-family: 'Staatliches';
+    font-size: 22px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+* {
+    user-select: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 10ms;
+}
+
+.mainBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    max-width: 1920px;
+    max-height: 1080px;
+    
+    background: #593fff33;
+}
+
+.nuiContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    max-width: 850px;
+    max-height: 425px;
+    
+    background: #F7F7F7;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 43px;
+}
+
+#leftSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    width: 50%;
+    height: 100%;
+
+    border-radius: 43px;
+}
+
+#leftSide header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 75%;
+    width: 100%;
+    height: 10%;
+    border-radius: 43px;
+}
+
+#leftSide header nav ul {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50%;
+    gap: 22px;
+
+    list-style: none;
+}
+
+#leftSide header nav ul li a {
+    transition: all 40ms;
+    -webkit-transition: all 40ms;
+    padding: 5%;
+    border-radius: 12px;
+
+    color: #B2B3BB;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-size: 33px;
+
+    cursor: pointer;
+}
+
+#leftSide header nav ul li a:hover {
+    font-size: 36px;
+}
+
+.leftCards {
+    width: 90%;
+    height: 57.5%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.receivableCard {
+    min-width: 106px;
+    min-height: 106px;
+    max-width: 106px;
+    max-height: 106px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.071);
+    border-radius: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55px 55px;
+    background-color: white;
+    margin: 8px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #78849C;
+    font-size: 70%;
+    cursor: pointer;
+}
+.deliverableCard {
+    min-width: 106px;
+    min-height: 106px;
+    max-width: 106px;
+    max-height: 106px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.071);
+    border-radius: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55px 55px;
+    background-color: white;
+    margin: 8px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #78849C;
+    font-size: 70%;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #BCBECE; 
+    border-radius: 107px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #715AFF; 
+    border-radius: 107px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #593fff;
+}
+
+#rightRec {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-top: 10%;
+    width: 85%;
+    height: 65%;
+
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.12);
+}
+
+#rightSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin-left: 50.5%;
+    border-radius: 43px;
+}
+
+#rightSide header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 75%;
+    width: 100%;
+    height: 10%;
+    border-radius: 43px;
+}
+
+#rightSide header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50%;
+    gap: 22px;
+
+    list-style: none;
+}
+
+#rightSide header nav ul li a {
+    transition: all 40ms;
+    -webkit-transition: all 40ms;
+    padding: 10%;
+    border-radius: 12px;
+
+    color: #B2B3BB;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-size: 33px;
+
+    cursor: pointer;
+}
+
+#rightSide header nav ul li a:hover {
+    font-size: 36px;
+}
+
+.startButton {
+    transition: all 50ms;
+    -webkit-transition: all 50ms;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 55px;
+    margin-top: 100%;
+    
+    background: linear-gradient(180deg, #9D51FF 0%, #6951FF 100%);
+    border: none;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 33px;
+    
+    color: #ffffff;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+}
+
+.startButton:hover {
+    font-size: 48px;
+    max-width: 312px;
+    max-height: 58px;
+}
+
+#promptBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+#promptContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+    max-width: 350px;
+    max-height: 75px;
+
+    margin-bottom: 38%;
+
+    color: #715AFF;
+    font-size: 88%;
+    
+    background: #F7F7F7;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 43px;
+}
+
+.inviteCard {
+    min-width: 330px;
+    min-height: 70px;
+    max-width: 330px;
+    max-height: 70px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.071);
+    border-radius: 14px;
+    margin: 6px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #78849C;
+    font-size: 90%;
+}
+
+.inviteCardButton{
+    margin-left: 20%;
+    background: linear-gradient(180deg, #9D51FF 0%, #6951FF 100%);
+    border: none;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 33px;
+    
+    color: #ffffff;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
